@@ -14,8 +14,8 @@ module "publisher-aws" {
   source  = "netskopeoss/publisher-aws/netskope"
   version = "0.1.1"
 
-  publisher_name = "<publisher-name>"
-  aws_key_name   = "<ssh-key-name>"
+  publisher_name     = "<publisher-name>"
+  aws_key_name       = "<ssh-key-name>"
   aws_subnet         = "<subnet-id>"
   aws_security_group = "<sg-id>"
 
@@ -37,7 +37,7 @@ module "publisher-aws" {
 
   publisher_name = "<publisher-name>${each.key}"
 
-  aws_key_name   = "<ssh-key-name>"
+  aws_key_name       = "<ssh-key-name>"
   aws_subnet         = "<subnet-id>"
   aws_security_group = "<sg-id>"
 
@@ -59,7 +59,7 @@ module "publisher-aws" {
 
   publisher_name = "<publisher-name>${each.key}"
 
-  aws_key_name   = "<ssh-key-name>"
+  aws_key_name         = "<ssh-key-name>"
   aws_subnet           = "<subnet-id>"
   aws_security_group   = "<sg-id>"
   iam_instance_profile = "<ssm-iam-role>"  //Must include IAM Instance Profile with SSM Policy.
